@@ -15,8 +15,5 @@ interface ApiInterface {
     @POST("api/public/add")
     fun addProduct(@Body postModel: AddPostModel): Response<AddProductResponse>
 
-    @POST("api/public/add")
-    suspend fun addProducts(@Body params: AddProductResponse
-    ) : Response<PostModel>
 
 }
